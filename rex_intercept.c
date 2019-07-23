@@ -126,7 +126,7 @@ SpiceDouble v_intercept_point[3];
 
     if (first) {
       /* Header line for CSV output */
-      fprintf(stdout,"UTC,intercept found,V_intercept_X,_Y,_Z,Intercept_R,_ELon,_Lat,emission,V_intercept_to_nh,_Y,_Z,V_nh_X,_Y,_Z\"\n");
+      fprintf(stdout,"UTC,intercept found,V_intercept_X,_Y,_Z,Intercept_R,_ELon,_Lat,emission,V_intercept_to_nh,_Y,_Z,V_nh_X,_Y,_Z\n");
       first = 0;
     }
 
