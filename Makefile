@@ -11,8 +11,16 @@ default: $(EXE)
 run: $(EXE).csv
 
 $(EXE).csv: $(EXE)
-	### E.g. ln -s ../nhsp_1000/extras/mk/nh_v04.tm mk.tm
 	echo "./$(EXE) 2015-07-14T11:58:{2..0}{9..0} 2015-07-14T11:55:{5..0}{9..0} nh_pcnh_002_pck.tm mk.tm" | bash | tee $@
+	@###
+	@### E.g. assuming the PDS NH SPICE archive resides under
+	@###      ../nhsp_1000/, the following command:
+	@###
+	@###        ln -s ../nhsp_1000/extras/mk/nh_v04.tm mk.tm
+	@###
+	@###      executed in the Present Working Directory (PWD) makes
+	@###      the symbolic link (symlink) mk.tm effectively the same
+	@###      as the Meta-Kernel nh_v04.tm in that archive.
 
 clean:
 	$(RM) $(EXE)
