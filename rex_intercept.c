@@ -11,6 +11,8 @@ Usage:\n\
 \n\
     %s 2015-07-14T11:55:{5,4,3,2,1,0}{9,8,7,6,5,4,3,2,1,0} nh_pcnh_002_pck.tm nhsp_1000/extras/mk/nh_v04.tm\n\
 \n\
+    %s 2015-07-14T11:58:{3,2,1,0}{9,8,7,6,5,4,3,2,1,0} nh_pcnh_002_pck.tm nhsp_1000/extras/mk/nh_v04.tm\n\
+\n\
 \n\
 Kernel Management (setup for the example above):\n\
 \n\
@@ -156,7 +158,7 @@ int main(int argc, char** argv) {
     if (!strcmp(ARG,"-h")) {
       /* -h => Usage */
       argc = 0;
-      fprintf(stdout,USAGEFMT,ARG,ARG);
+      fprintf(stdout,USAGEFMT,ARG,ARG,ARG);
       return 0;
     }
 
