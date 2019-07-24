@@ -11,7 +11,7 @@ default: $(EXE)
 run: $(EXE).csv
 
 $(EXE).csv: $(EXE)
-	echo "./$(EXE) 2015-07-14T11:58:{2..0}{9..0} 2015-07-14T11:55:{5..0}{9..0} nh_pcnh_002_pck.tm mk.tm" | bash | tee $@
+	echo "./$(EXE) 2015-07-14T11:58:{30..00} 2015-07-14T11:55:{59..00} nh_pcnh_002_pck.tm mk.tm" | bash | tee $@
 	@###
 	@### E.g. assuming the PDS NH SPICE archive resides under
 	@###      ../nhsp_1000/, the following command:
