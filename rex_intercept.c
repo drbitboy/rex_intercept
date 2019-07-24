@@ -20,7 +20,7 @@ Kernel Management (setup for the example above):\n\
   -X /pub/naif/pds/data/nh-j_p_ss-spice-6-v1.0/nhsp_1000/index \\\n\
   -X /pub/naif/pds/data/nh-j_p_ss-spice-6-v1.0/nhsp_1000/software \\\n\
   -R '*.lbl,*=*' \\\n\
-  --mirror -np -nH --cut-dirs=5 --mirror -N\n\
+  --mirror -np -nH --cut-dirs=5 -N\n\
 \n\
   ln -s nhsp_1000/data   ### Make SPICE archive data/ sub-directory apper \"local\"\n\
 \n\
